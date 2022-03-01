@@ -65,7 +65,15 @@ class customElement extends HTMLElement{
             
             /*Los elementos internos tambien 
             son manipulables mediante el :host*/
+            :host(.interno) h1{
+                color:red;
+                font-size:2rem;
+            }
 
+            :host(.interno) p{
+                color:green;
+                font-size:3rem;
+            }
 
             </style>
         `
