@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos en Componentes</title>
+
+    <style>
+        my-element{
+            --secundary-color:black;
+        }
+
+        .component2{
+            --primary-color:green;
+        }
+
+    </style>
 </head>
 <body>
     <my-element>
-        <span slot="title">Hola desde un componente</span>
-        <span slot="parrafo">Soy texto de ejemplo</span>
+        <span slot="title">Component 1
+        </span>
+        <span class="subtitle" slot="parrafo">Soy texto de ejemplo</span>
+    </my-element>
+
+
+    <my-element class="component2">
+        <span slot="title">Component 2
+        </span>
+        <span class="subtitle" slot="parrafo">Soy texto de ejemplo</span>
+    </my-element>
+
+    <my-element>
+        <span slot="title">Component 3
+        </span>
+        <span class="subtitle" slot="parrafo">Soy texto de ejemplo</span>
     </my-element>
 
 

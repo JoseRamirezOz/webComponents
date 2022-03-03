@@ -28,7 +28,23 @@ class customElement extends HTMLElement{
     getStyle(){
         return `
             <style>
+            :host{
+                --primary-color:tomato;
+                --anything-text:white;
+                --secundary-color:purple;
+            }
+                
+            section{
+                background:var(--secundary-color);
+                color:var(--anything-text);
+                border:black dashed .2rem;
+                margin:1rem 0rem;
+                width:50%;
+            }
 
+            h1{
+                background:var(--primary-color);
+            }
             </style>
         `
     }
